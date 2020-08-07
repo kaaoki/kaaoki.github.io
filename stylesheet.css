@@ -46,6 +46,7 @@ a {
 }
 
 #heart{
+  display:none;
   color:red;
 }
 
