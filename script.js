@@ -1,5 +1,18 @@
 $(function(){
     
+    $('.signup').click(function(){
+      $('#heart').slideDown(300);
+    });
+    
+    $('.facebook').click(function(){
+      $('#heart').slideUp(300);
+    });
+    
+    $('.twitter').click(function(){
+      $('#heart').slideDown(300);
+    });    
+
+  /*  
   $('.signup').clickToggle(function () {
     // １回目のクリック
     $('#heart').slideDown(300);
@@ -20,6 +33,7 @@ $(function(){
       });
     });
   };
+  */
 
 });
 
