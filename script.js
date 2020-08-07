@@ -22,7 +22,16 @@ $(function(){
     // ２回目のクリック
     $('#heart').slideUp(300);
   });
-  
+
+  $('.facebook').clickToggle(function () {
+    // １回目のクリック
+    $('#heart').css('color','blue');
+    $('#heart').slideDown(300);
+  }, function () {
+    // ２回目のクリック
+    $('#heart').slideUp(300);
+  });
+
   $.fn.clickToggle = function (a, b) {
     return this.each(function () {
       var clicked = false;
