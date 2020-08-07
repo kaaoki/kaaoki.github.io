@@ -45,6 +45,10 @@ a {
   margin-bottom: 20px;
 }
 
+#heart{
+  color:red;
+}
+
 .signup {
   background-color: #239b76;
 }
