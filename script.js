@@ -1,50 +1,27 @@
 $(function(){
-    /*
-    $('.signup').click(function(){
+    
+    $('#title').click(function(){
+      $('#heart').css('color','red');      
       $('#heart').slideDown(300);
+      $('#heart').slideUp(1000);      
+    });
+ 
+    $('.signup').click(function(){
+      $('#heart').css('color','#239b76');
+      $('#heart').slideDown(300);
+      $('#heart').slideUp(1000);      
     });
     
     $('.facebook').click(function(){
-      $('#heart').slideUp(300);
+      $('#heart').css('color','#3b5998');
+      $('#heart').slideDown(300);
+      $('#heart').slideUp(1000);      
     });
     
     $('.twitter').click(function(){
+      $('#heart').css('color','#55acee');
       $('#heart').slideDown(300);
+      $('#heart').slideUp(1000);      
     });    
-    */
-    
-    
-  $('.signup').clickToggle(function () {
-    // １回目のクリック
-    $('#heart').css('color','green');
-    $('#heart').slideDown(300);
-  }, function () {
-    // ２回目のクリック
-    $('#heart').slideUp(300);
-  });
-
-  $('.facebook').clickToggle(function () {
-    // １回目のクリック
-    $('#heart').css('color','blue');
-    $('#heart').slideDown(300);
-  }, function () {
-    // ２回目のクリック
-    $('#heart').slideUp(300);
-  });
-
-  $.fn.clickToggle = function (a, b) {
-    return this.each(function () {
-      var clicked = false;
-      $(this).on('click', function () {
-        clicked = !clicked;
-        if (clicked) {
-          return a.apply(this, arguments);
-        }
-        return b.apply(this, arguments);
-      });
-    });
-  };
-  
 
 });
-
