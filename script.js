@@ -1,5 +1,5 @@
 $(function(){
-    
+    /*
     $('.signup').click(function(){
       $('#heart').slideDown(300);
     });
@@ -11,10 +11,12 @@ $(function(){
     $('.twitter').click(function(){
       $('#heart').slideDown(300);
     });    
-
-  /*  
+    */
+    
+    
   $('.signup').clickToggle(function () {
     // １回目のクリック
+    $('#heart').css('color','green');
     $('#heart').slideDown(300);
   }, function () {
     // ２回目のクリック
@@ -33,7 +35,7 @@ $(function(){
       });
     });
   };
-  */
+  
 
 });
 
