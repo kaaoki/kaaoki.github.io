@@ -45,6 +45,10 @@ a {
   margin-bottom: 20px;
 }
 
+#title{
+  cursor:pointer;
+}
+
 #heart{
   color:red;
   display:none;
