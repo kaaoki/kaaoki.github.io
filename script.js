@@ -1,5 +1,5 @@
 $(function(){
-  $('#title').clickToggle(function () {
+  $('.signup').clickToggle(function () {
     // １回目のクリック
     $('#heart').slideDown(300);
   }, function () {
