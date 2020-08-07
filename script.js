@@ -6,9 +6,8 @@ $(function(){
     // ２回目のクリック
     $('#heart').slideUp(300);
   });
-});
-
-$.fn.clickToggle = function (a, b) {
+  
+  $.fn.clickToggle = function (a, b) {
   return this.each(function () {
     var clicked = false;
     $(this).on('click', function () {
@@ -19,4 +18,6 @@ $.fn.clickToggle = function (a, b) {
       return b.apply(this, arguments);
     });
   });
-};
+
+});
+
